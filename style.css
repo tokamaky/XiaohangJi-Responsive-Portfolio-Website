@@ -167,7 +167,9 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
+  scroll-margin-top: 60px; /* Use scroll-margin-top to create space for sticky header */
 }
+
 
 .section-container {
   display: flex;
@@ -370,6 +372,7 @@ article .icon {
 
 #projects {
   position: relative;
+  z-index:5;
 }
 
 .color-container {
@@ -399,20 +402,13 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 12vh;;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color:white; /* Choose an appropriate background color */
-  padding: 20px 0; /* Add padding for spacing */
-  z-index: 1; /* Make the contact section slightly below the header */
+  height: 70vh;
+  z-index:10;
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the left */
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
@@ -429,12 +425,8 @@ article .icon {
   margin: 1rem;
 }
 
-.title2 {
-  font-size: 3rem;
-  text-align: left;
-}
 .contact-info-container p {
-  font-size: medium;
+  font-size: larger;
 }
 
 .contact-icon {
