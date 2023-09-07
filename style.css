@@ -303,9 +303,13 @@ section {
 }
 
 .arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  font-size: 2rem; /* Adjust the font size as needed */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block; /* Change display to inline-block */
+  vertical-align: middle; /* Vertically align the buttons */
+  line-height: 1; /* Reset line-height for vertical alignment */
 }
 
 .details-container {
@@ -394,6 +398,14 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+}
+
+.prev-btn {
+  transform: scaleX(-1); /* Flip the left arrow horizontally */
+}
+
+.next-btn {
+  margin-left: 1rem;
 }
 
 /* CONTACT */
