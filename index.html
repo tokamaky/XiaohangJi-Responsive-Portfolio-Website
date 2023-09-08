@@ -235,45 +235,39 @@
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
-        <div class="about-containers">
-            <!-- Project Display Container -->
+        <div class="about-containers ">
+            <!-- Left Arrow Button -->
+            <button class="left-arrow project-container" onclick="changeProject(-1)">
+                &lt;
+            </button>
             <div class="details-container color-container">
-                <!-- Arrow for Previous Project -->
-                <button class="arrow prev-btn" onclick="changeProject(-1)">
-                    &lt; <!-- Left arrow symbol -->
-                </button>
                 <div class="article-container">
-                    <img
-                        src="./assets/project-1.png"
-                        alt="Project 1"
-                        class="project-img"
-                    />
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img project-container" />
                 </div>
                 <h2 class="experience-sub-title project-title">Project One</h2>
                 <div class="btn-container">
-                    <!-- GitHub button for Project One -->
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="openGitHub('https://github.com/')"
-                    >
+                    <!-- Project Links -->
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
                         Github
                     </button>
-                    <!-- Live Demo button for Project One -->
-                    <button
-                        class="btn btn-color-2 project-btn"
-                        onclick="openDemo('https://github.com/')"
-                    >
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
                         Live Demo
                     </button>
                 </div>
-                <!-- Arrow for Next Project -->
-                <button class="arrow next-btn" onclick="changeProject(1)">
-                    &gt; <!-- Right arrow symbol -->
-                </button>
             </div>
+            <!-- Right Arrow Button -->
+            <button class="right-arrow project-container" onclick="changeProject(1)">
+                &gt;
+            </button>
         </div>
     </div>
 </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>

@@ -400,14 +400,52 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-.prev-btn {
-  transform: scaleX(-1); /* Flip the left arrow horizontally */
+/* Left Arrow Button */
+.left-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black; /* Change the color as needed */
+  outline: none; /* Remove the default focus outline */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  position: absolute;
+  left: 0; /* Position the arrow outside the project container */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(0%); /* Vertically center the arrow */
 }
 
-.next-btn {
-  margin-left: 1rem;
+/* Right Arrow Button */
+.right-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black; /* Change the color as needed */
+  outline: none; /* Remove the default focus outline */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  position: absolute;
+  right: 0; /* Position the arrow outside the project container */
+  top: 50%; /* Vertically center the arrow */
+  transform: translateY(0%); /* Vertically center the arrow */
 }
 
+/* Media Query to Adjust Positioning for Small Screens */
+@media (max-width: 768px) {
+  .left-arrow {
+      left: 0; /* Adjust the left position for small screens */
+  }
+  .right-arrow {
+      right: 0; /* Adjust the right position for small screens */
+  }
+}
+
+/* Project Container Styles */
+.project-container {
+  position: relative;
+}
 /* CONTACT */
 
 #contact {
