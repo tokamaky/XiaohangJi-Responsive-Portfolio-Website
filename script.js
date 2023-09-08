@@ -22,23 +22,23 @@ function changeProject(direction) {
   // You can fetch data dynamically or use static data as per your requirements
   // For simplicity, I'm assuming static data here
   const projectTitle = document.querySelector('.project-title');
-  const projectDescription = document.querySelector('.project-description');
+  //const projectDescription = document.querySelector('.project-description');
   const projectImg = document.querySelector('.project-img');
 
   switch (currentProject) {
     case 1:
       projectTitle.textContent = 'Project One';
-      projectDescription.textContent = 'This is a description of Project One.';
+      //projectDescription.textContent = 'This is a description of Project One.';
       projectImg.src = './assets/project-1.png';
       break;
     case 2:
       projectTitle.textContent = 'Project Two';
-      projectDescription.textContent = 'This is a description of Project Two.';
+     // projectDescription.textContent = 'This is a description of Project Two.';
       projectImg.src = './assets/project-2.png';
       break;
     case 3:
       projectTitle.textContent = 'Project Three';
-      projectDescription.textContent = 'This is a description of Project Three.';
+      //projectDescription.textContent = 'This is a description of Project Three.';
       projectImg.src = './assets/project-3.png';
       break;
   }
