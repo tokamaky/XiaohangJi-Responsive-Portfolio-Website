@@ -237,9 +237,6 @@
     <div class="experience-details-container">
         <div class="about-containers ">
             <!-- Left Arrow Button -->
-            <button class="left-arrow project-container" onclick="changeProject(-1)">
-                &lt;
-            </button>
             <div class="details-container color-container">
                 <div class="article-container">
                     <img src="./assets/project-1.png" alt="Project 1" class="project-img project-container" />
@@ -255,18 +252,19 @@
                     </button>
                 </div>
             </div>
-            <!-- Right Arrow Button -->
-            <button class="right-arrow project-container" onclick="changeProject(1)">
-                &gt;
-            </button>
         </div>
+        
     </div>
-</section>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="project-arrows">
+      <!-- Left Arrow Button (outside the container) -->
+      <button class="left-arrow project-arrow" onclick="changeProject(-1)">
+          &lt;
+      </button>
+      <!-- Right Arrow Button (outside the container) -->
+      <button class="right-arrow project-arrow" onclick="changeProject(1)">
+          &gt;
+      </button>
+  </div>
   </section>
 
   <section id="contact">
