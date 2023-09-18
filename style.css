@@ -377,6 +377,7 @@ article .icon {
 #projects {
   position: relative;
   z-index:5;
+  display: block;
 }
 
 .color-container {
@@ -384,10 +385,24 @@ article .icon {
   background: rgb(250, 250, 250);
 }
 
-.project-img {
+.text{
+  width: 80%;
+  height: 10%;
+
+  margin: 20px auto 0;
+}
+
+.article-container{
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 70%;
+  overflow: hidden;
+  margin: auto;
+}
+.project-img {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
 }
 
 .project-title {
@@ -400,12 +415,13 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.white-arrows span{
+  cursor: pointer;
+}
+
 /* CSS */
 /* ... (previous styles) ... */
 
-.project-arrows {
-  position: relative;
-}
 
 /* Left Arrow Button (outside the container) */
 .left-arrow.project-arrow {
