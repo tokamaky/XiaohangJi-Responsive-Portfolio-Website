@@ -64,7 +64,7 @@ function changeProject(direction,toArrows) {
 
   switch (currentProject) {
     case 1:
-      projectTitle.textContent = 'Project One';
+      projectTitle.textContent = 'Open Api Platform';
       //projectDescription.textContent = 'This is a description of Project One.';
       projectImg.src = './assets/Open_API.png';
       projectText.innerHTML='asdasdasdasd';
@@ -73,7 +73,7 @@ function changeProject(direction,toArrows) {
       whiteArrows[2].style.backgroundColor = 'white'
       break;
     case 2:
-      projectTitle.textContent = 'Project Two';
+      projectTitle.textContent = 'Full Stack Library';
      // projectDescription.textContent = 'This is a description of Project Two.';
       projectImg.src = './assets/React_Library.png';
       projectText.innerHTML='1234151235';

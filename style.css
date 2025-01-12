@@ -231,21 +231,34 @@ section {
 /* BUTTONS */
 
 .btn-container {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*gap: 1rem;*/
+  /*position: absolute;*/
+  /*bottom: 1rem; !* 距离底部边框的距离 *!*/
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*width: 80%; !* 根据需要调整宽度 *!*/
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  position: absolute;
-  bottom: 1rem; /* 距离底部边框的距离 */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%; /* 根据需要调整宽度 */
+  justify-content: space-between;  /* 确保按钮之间有间距 */
+  gap: 1rem;  /* 调整按钮之间的空隙 */
+  width: 100%;  /* 让按钮容器占满可用的宽度 */
 }
 .btn {
+  /*font-weight: 600;*/
+  /*transition: all 300ms ease;*/
+  /*padding: 1rem;*/
+  /*width: 8rem;*/
+  /*border-radius: 2rem;*/
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;  /* 按钮内文本和图标之间的间距 */
 }
 
 .btn-color-1,
@@ -317,15 +330,18 @@ section {
 }
 
 .details-container {
-  padding: 2rem;
+  /*padding: 2rem;*/
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  position: relative; /* 使箭头和按钮参考项目容器的边界定位 */
-  /*padding: 2rem;*/
+  position: relative;
+  overflow: hidden; /* 防止内容溢出 */
+  height: auto;
+  /*padding: 20px; !* 增加内边距，避免箭头靠得太近 *!!* 使箭头和按钮参考项目容器的边界定位 *!*/
+  padding: 2rem;
 }
 
 .section-container {
@@ -356,6 +372,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  overflow: initial;
 }
 
 .article-container {
@@ -363,7 +380,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 0.5rem;
   justify-content: space-around;
 }
 
@@ -390,7 +407,10 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   position: relative; /* 使箭头和按钮参考项目容器的边界定位 */
-  padding: 2rem;
+  /*padding: 2rem;*/
+  overflow: hidden; /* 防止内容溢出 */
+  padding: 20px; /* 增加内边距，避免箭头靠得太近 */
+
 }
 
 .text{
@@ -414,8 +434,12 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin-bottom: 2rem; /* 增加底部间距，避免按钮与标题重叠 */
+  font-size: 1.5rem; /* 调整字体大小 */
   color: black;
+  text-align: center; /* 保证标题居中 */
+
+  line-height: 70rpx;
 }
 
 .project-btn {
@@ -433,27 +457,26 @@ article .icon {
 
 /* Left Arrow Button (outside the container) */
 /* 调整箭头按钮位置 */
-.left-arrow.project-arrow, .right-arrow.project-arrow {
-  background-color: transparent;
-  border: none;
+/* 左右箭头按钮 */
+.left-arrow.project-arrow,
+.right-arrow.project-arrow {
+  position: absolute; /* 相对于项目容器定位 */
+  top: 50%; /* 定位到容器中间 */
+  transform: translateY(-50%); /* 垂直居中 */
+  z-index: 10; /* 确保按钮显示在内容上方 */
   font-size: 2rem;
+  background: transparent;
+  border: none;
   cursor: pointer;
   color: black;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
 }
 
 .left-arrow.project-arrow {
-  left: -2rem; /* 使按钮靠近左边框 */
+  left: 0; /* 按钮贴紧项目边框的左侧 */
 }
 
 .right-arrow.project-arrow {
-  right: -2rem; /* 使按钮靠近右边框 */
+  right: 0; /* 按钮贴紧项目边框的右侧 */
 }
 
 

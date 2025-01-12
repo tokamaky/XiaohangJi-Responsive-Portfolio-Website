@@ -1,306 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/newcss.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
 </head>
 <body>
-  <nav id="desktop-nav">
+<nav id="desktop-nav">
     <div class="logo"> Xiaohang Ji</div>
     <div>
-      <ul class = "nav-links">
-        <li><a href="#about" >About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
-  </nav>
-  <nav id="hamburger-nav">
+</nav>
+<nav id="hamburger-nav">
     <div class="logo"> Xiaohang Ji</div>
     <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <div class="menu-links">
-      <li><a href="#about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
-  </nav>
-  <section id="profile">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+</nav>
+<section id="profile">
     <div class="section__pic-container">
-      <!--personal picture-->
-      <img src="./assets/profile-pic.png" alt="Xiaohang Ji profile picture">
+        <!--personal picture-->
+        <img src="./assets/profile-pic.png" alt="Xiaohang Ji profile picture">
     </div>
     <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class ="title">Xiaohang Ji</h1>
-      <p class="section__text__p2">Programmer</p>
-      <div class="btn-container">
-        <!--resume-->
-        <button 
-          class="btn btn-color-2"
-          onclick="window.open('./assets/Xiaohang_Ji_  Resume.docx')">
-          Download CV
-        </button>
-        <button 
-          class="btn btn-color-1"
-          onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-      <div id="socials-container">
-        <img src="./assets/linkedin.png"
-          alt="My Linkedin Profile"
-          class="icon" 
-          onclick="location.href='https://www.linkedin.com/in/xiaohang-ji-a839a5227'"
-        />
-        <img src="./assets/github.png"
-          alt="My Github Profile"
-          class="icon" 
-          onclick="location.href='https://github.com/tokamaky'"
-        />
-      </div>
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Xiaohang Ji</h1>
+        <p class="section__text__p2">Programmer</p>
+        <div class="btn-container">
+            <!--resume-->
+            <button
+                    class="btn btn-color-2"
+                    onclick="window.open('./assets/Xiaohang_Ji_  Resume.docx')">
+                Download CV
+            </button>
+            <button
+                    class="btn btn-color-1"
+                    onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png"
+                 alt="My Linkedin Profile"
+                 class="icon"
+                 onclick="location.href='https://www.linkedin.com/in/xiaohang-ji-a839a5227'"
+            />
+            <img src="./assets/github.png"
+                 alt="My Github Profile"
+                 class="icon"
+                 onclick="location.href='https://github.com/tokamaky'"
+            />
+        </div>
     </div>
-  </section>
-  <section id="about">
+</section>
+<section id="about">
     <p class="section__text__p1">Get To Know More</p>
-    <h1 class ="title">About Me</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img
-          src="./assets/about-pic.png"
-          alt="Profile picture"
-          class="about-pic"
-        />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img
-              src="./assets/experience.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <h3>Experience</h3>
-            <p>1 year <br />IT Student</p>
-          </div>
-          <div class="details-container">
-            <img
-              src="./assets/education.png"
-              alt="Education icon"
-              class="icon"
-            />
-            <h3>Education</h3>
-            <p>Computer Engineering Technology-ComputingScience<br />Algonquin College
-              Advanced Diploma<br />GPA 3.8/4.0</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>
-            IT Intern<br>
-            Agriculture and Agri-Food Canada · Co-op<br>
-            May 2023 - Sep 2024 | 1 yr 5 mos<br><br>
-            - Supported backend systems for 2,000+ employees by resolving infrastructure issues.<br>
-            - Conducted software testing to ensure system performance and reliability.<br>
-            - Maintained databases and optimized backend processes for efficiency.
-          </p>
-        </div>
+    <h1 class="title">About Me</h1>
+<!--    <div class="section-container">-->
+<!--        <div class="section__pic-container">-->
+<!--            <img-->
+<!--                    src="./assets/about-pic.png"-->
+<!--                    alt="Profile picture"-->
+<!--                    class="about-pic"-->
+<!--            />-->
+<!--        </div>-->
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                            src="./assets/experience.png"
+                            alt="Experience icon"
+                            class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>1 year <br/>IT Student</p>
+                </div>
+                <div class="details-container">
+                    <img
+                            src="./assets/education.png"
+                            alt="Education icon"
+                            class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Computer Engineering Technology-ComputingScience<br/>Algonquin College
+                        Advanced Diploma<br/>GPA 3.8/4.0</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    <b>IT Intern</b><br>
+                    <i>Agriculture and Agri-Food Canada · Co-op</i><br>
+                    May 2023 - Sep 2024 | 1 yr 5 mos<br><br>
+                    - Supported backend systems for 2,000+ employees by resolving infrastructure issues.<br>
+                    - Conducted software testing to ensure system performance and reliability.<br>
+                    - Maintained databases and optimized backend processes for efficiency.
+                </p>
+            </div>
 
-      </div>
+<!--        </div>-->
     </div>
-  </section>
-  <section id="experience">
+</section>
+<section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Backend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Java</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Spring boot</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Redis</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Spring Cloud Gateway</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Docker</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Frontend Development</h2>
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>MySQL</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Node JS</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>React</h3>
-                <p>Basic</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Git</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-        <div class="about-containers ">
-            <!-- Left Arrow Button -->
-            <div class="details-container color-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
                 <div class="article-container">
-                    <img src="./assets/Open_API.png" alt="Project 1" class="project-img project-container" />
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Node JS</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>React</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
                 </div>
-                <div class="text project-description"></div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <!-- Project Links -->
-                    <button class="btn btn-color-2 project-btn1">
-                        Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn2">
-                        Live Demo
-                    </button>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Java</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Spring boot</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Redis</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Spring Cloud Gateway</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Tool</h2>
+                <div class="article-container">
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Docker</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Postman</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Intellij</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img
+                                src="./assets/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                        />
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
-        
     </div>
-    <div class="project-arrows">
-      <!-- Left Arrow Button (outside the container) -->
-      <button class="left-arrow project-arrow" onclick="changeProject(-1,null)">
-          &lt;
-      </button>
-      <!-- Right Arrow Button (outside the container) -->
-      <button class="right-arrow project-arrow" onclick="changeProject(1,null)">
-          &gt;
-      </button>
-    </div>
-<!--    <div class="white-arrows">-->
-<!--      <span onclick="changeProject(null,1)"></span>-->
-<!--      <span onclick="changeProject(null,2)"></span>-->
-<!--      <span onclick="changeProject(null,3)"></span>-->
-<!--    </div>-->
-  </section>
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
 
-  <section id="contact">
+    <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+            <!-- ------------------------portfollio 2-------------------- -->
+
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/Open_API.png" class="portfolio__img" />
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">
+                        Open Api Platform
+                    </h3>
+                    <p class="portfolio__description">
+                        This project is an <strong>API interface open platform</strong> designed to provide developers with
+                        efficient, secure, and easy-to-use API services.
+                    </p>
+                    <p>
+                        With a <strong>modular design</strong> and <strong>technical integration</strong>, the platform supports
+                        features such as:
+                    </p>
+                    <ul>
+                        <li><strong>API Management</strong></li>
+                        <li><strong>User Permission Control</strong></li>
+                        <li><strong>Usage Statistics and Analysis</strong></li>
+                    </ul>
+                    <p>
+                        The platform ensures a <strong>user-friendly experience</strong> for both developers and administrators,
+                        providing efficient development support.
+                    </p>
+                </div>
+                <div class="btn-container">
+                    <a href="https://github.com/tokamaky/Xiaohang-open_api_platform" target="_blank"
+                       class="btn btn-color-2 projectBtn1">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                    <a href="https://xiaohang-openapiplatform-production.up.railway.app/" target="_blank"
+                       class="btn btn-color-2">
+                        See Live
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- ------------------------portfollio 3-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="assets/React_Library.png" class="portfolio__img" />
+
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">
+                        Open Api Platform
+                    </h3>
+                    <p class="portfolio__description">
+                        This project is a Full Stack web application developed using
+                        <strong>React</strong> for the frontend and <strong>Java Spring Boot</strong> for the backend.
+                    </p>
+                    <p>
+                        The application incorporates the following key features:
+                    </p>
+                    <ul>
+                        <li><strong>Stripe Credit Card Payment Integration</strong> – Ensures seamless and secure online transactions.</li>
+                        <li><strong>JWT-based Authentication</strong> – Provides robust security for user sessions.</li>
+                        <li><strong>User Role Management</strong> – Enables customized access control based on user roles.</li>
+                    </ul>
+                    <p>
+                        Additionally, the application employs a <strong>modular design</strong> to streamline development,
+                        improve code organization, and enhance scalability, making it adaptable for future growth and feature expansion.
+                    </p>
+                </div>
+                    <div class="btn-container">
+                    <a href="https://github.com/tokamaky/LibraryApp-FullStack-React-tsx" target="_blank"
+                       class="btn btn-color-2 projectBtn1">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                    <a href="https://jerrylibrary.up.railway.app/home" target="_blank"
+                       class="btn btn-color-2">
+                        See Live
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- add arrows -->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+        <!-- add pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--    <p class="section__text__p1">Browse My Recent</p>-->
+<!--    <h1 class="title">Projects</h1>-->
+
+
+
+<!--    <div class="experience-details-container">-->
+<!--        <div class="about-containers ">-->
+<!--            &lt;!&ndash; Left Arrow Button &ndash;&gt;-->
+<!--            <div class="details-container color-container">-->
+<!--                <div class="project-arrows">-->
+<!--                    &lt;!&ndash; Left Arrow Button (outside the container) &ndash;&gt;-->
+<!--                    <button class="left-arrow project-arrow" onclick="changeProject(-1,null)">-->
+<!--                        &lt;-->
+<!--                    </button>-->
+<!--                    &lt;!&ndash; Right Arrow Button (outside the container) &ndash;&gt;-->
+<!--                    <button class="right-arrow project-arrow" onclick="changeProject(1,null)">-->
+<!--                        &gt;-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="article-container">-->
+<!--                    <img src="./assets/Open_API.png" alt="Project 1" class="project-img project-container"/>-->
+<!--                </div>-->
+<!--                <div class="text project-description"></div>-->
+<!--                <h2 class="experience-sub-title project-title">Project One</h2>-->
+<!--                <div class="btn-container">-->
+<!--                    &lt;!&ndash; Project Links &ndash;&gt;-->
+<!--                    <button class="btn btn-color-2 project-btn1">-->
+<!--                        Github-->
+<!--                    </button>-->
+<!--                    <button class="btn btn-color-2 project-btn2">-->
+<!--                        Live Demo-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--        <div class="white-arrows">-->
+<!--          <span onclick="changeProject(null,1)"></span>-->
+<!--          <span onclick="changeProject(null,2)"></span>-->
+<!--          <span onclick="changeProject(null,3)"></span>-->
+<!--        </div>-->
+<!--</section>-->
+
+<section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:jxh186045@gmail.com">jxh186045@gmail.com</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="https://www.linkedin.com/in/xiaohang-ji-a839a5227">LinkedIn</a></p>
-      </div>
+        <div class="contact-info-container">
+            <img
+                    src="./assets/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:jxh186045@gmail.com">jxh186045@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+                    src="./assets/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/xiaohang-ji-a839a5227">LinkedIn</a></p>
+        </div>
     </div>
-  </section>
-  <footer>
+</section>
+<footer>
     <p>Copyright &#169; 2023 Xiaoahng Ji. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
+</footer>
+<script src="script.js"></script>
+<script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
+<script src="assets/ptj.js"></script>
 </body>
-</html>  
+</html>
