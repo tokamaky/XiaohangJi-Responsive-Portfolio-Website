@@ -234,8 +234,12 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  position: absolute;
+  bottom: 1rem; /* 距离底部边框的距离 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* 根据需要调整宽度 */
 }
-
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
@@ -313,13 +317,15 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  position: relative; /* 使箭头和按钮参考项目容器的边界定位 */
+  /*padding: 2rem;*/
 }
 
 .section-container {
@@ -383,6 +389,8 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  position: relative; /* 使箭头和按钮参考项目容器的边界定位 */
+  padding: 2rem;
 }
 
 .text{
@@ -424,7 +432,8 @@ article .icon {
 
 
 /* Left Arrow Button (outside the container) */
-.left-arrow.project-arrow {
+/* 调整箭头按钮位置 */
+.left-arrow.project-arrow, .right-arrow.project-arrow {
   background-color: transparent;
   border: none;
   font-size: 2rem;
@@ -434,26 +443,19 @@ article .icon {
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 0;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 10;
 }
 
-/* Right Arrow Button (outside the container) */
-.right-arrow.project-arrow {
-  background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: black;
-  outline: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.left-arrow.project-arrow {
+  left: -2rem; /* 使按钮靠近左边框 */
 }
+
+.right-arrow.project-arrow {
+  right: -2rem; /* 使按钮靠近右边框 */
+}
+
 
 /* ... (remaining styles) ... */
 
