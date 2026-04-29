@@ -472,7 +472,7 @@
     <div class="hero-stats">
       <div><div class="stat-num">3.73</div><div class="stat-label">GPA / 4.0</div></div>
       <div><div class="stat-num">2+</div><div class="stat-label">Years Experience</div></div>
-      <div><div class="stat-num">4+</div><div class="stat-label">Projects Built</div></div>
+      <div><div class="stat-num">4</div><div class="stat-label">Projects Built</div></div>
     </div>
   </div>
 
@@ -619,7 +619,7 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           Featured Project
         </div>
-        <div class="project-title">Ji-AI-Agent</div>
+        <div class="project-title">Ji-AI-Agent — Multi-Agent AI Platform with RAG & Tool Integration</div>
         <div class="project-desc">
           A production-grade multi-agent AI system built with Spring Boot. Features two distinct agents — <strong>LoveApp</strong> for conversational relationship advice with multi-turn memory, and <strong>JiManus</strong> for autonomous multi-step task execution using the ReAct pattern. Integrates Gemini 2.5 Flash, RAG with pgvector, MCP protocol for tool-calling, SSE streaming, and PDF generation — all deployed on Railway.
         </div>
@@ -660,14 +660,57 @@
       </div>
     </div>
 
-    <!-- Project 2 -->
+    <!-- Project 2 — Hot Monitor -->
     <div class="project-card reveal">
       <div class="project-body">
         <div class="project-meta">
           <span class="project-number">Project 02</span>
           <span class="project-status status-live">&#9679; Live</span>
         </div>
-        <div class="project-title">API Interface Open Platform</div>
+        <div class="project-title">Hot Monitor — Node.js Full Stack Application</div>
+        <div class="project-desc">
+          A real-time, AI-augmented trend monitoring system for content creators, marketers, and researchers. Set keywords once — parallel crawlers fan out across 8 platforms (Twitter, Hacker News, Bing, Google, DuckDuckGo, Weibo, Bilibili, Sogou) — an LLM filters out noise and ranks relevance by heat score. Results stream live to the browser via <strong>Socket.io WebSocket</strong> and to your inbox via <strong>SMTP email digest</strong>.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Node.js 20 LTS</span>
+          <span class="tech-pill">TypeScript 5.9</span>
+          <span class="tech-pill">Express 5</span>
+          <span class="tech-pill">Prisma 6</span>
+          <span class="tech-pill">Socket.io</span>
+          <span class="tech-pill">React 19</span>
+          <span class="tech-pill">Tailwind CSS 4</span>
+          <span class="tech-pill">Framer Motion</span>
+          <span class="tech-pill">LLM Gateway</span>
+          <span class="tech-pill">Railway</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/tokamaky/hang-hot-monitor.git" target="_blank" class="proj-link proj-link-github">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://frontend-production-bbae.up.railway.app/" target="_blank" class="proj-link proj-link-demo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo &rarr;
+          </a>
+        </div>
+      </div>
+      <div class="project-visual">
+        <div class="pvp-grid"></div>
+        <div class="project-visual-placeholder">
+          <div class="pvp-icon" style="font-size:1.6rem;">&#128293;</div>
+          <div class="pvp-label">Hot Monitor &middot; Real-time Trend Monitor</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card reveal">
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-number">Project 03</span>
+          <span class="project-status status-live">&#9679; Live</span>
+        </div>
+        <div class="project-title">API Marketplace Platform — Microservices-based API Gateway &amp; SDK</div>
         <div class="project-desc">
           A scalable open API platform supporting user registration, authentication, and permission management.
           Features gateway-based architecture with rate limiting and Redis caching for high concurrency.
@@ -695,15 +738,15 @@
         </div>
       </div>
       <div class="project-visual">
-        <img src="./assets/Open_API.png" alt="API Interface Open Platform" onerror="this.style.display='none'">
+        <img src="./assets/Open_API.png" alt="API Marketplace Platform" onerror="this.style.display='none'">
       </div>
     </div>
 
-    <!-- Project 3 -->
+    <!-- Project 4 -->
     <div class="project-card reveal">
       <div class="project-body">
         <div class="project-meta">
-          <span class="project-number">Project 03</span>
+          <span class="project-number">Project 04</span>
           <span class="project-status status-live">&#9679; Live</span>
         </div>
         <div class="project-title">Full Stack Web Application</div>
